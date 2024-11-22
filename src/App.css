@@ -1,0 +1,44 @@
+.app-layout {
+  display: flex;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  margin-left: auto; /* Adjust based on sidebar width */
+  padding: 20px;
+}
+.home-page {
+  padding-right: 120px; 
+}
+.quote-item {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}

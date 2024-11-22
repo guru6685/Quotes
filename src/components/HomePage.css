@@ -1,0 +1,125 @@
+/* General page styling */
+.home-page {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .header-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .header-subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Hero Section with background image */
+ 
+
+  .hero-section {
+     /* This path should be relative */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  /* Container for continuously scrolling quotes */
+  .quotes-container {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    animation: scrollQuotes 30s linear infinite;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .quote {
+    font-size: 24px;
+    font-style: italic;
+    margin: 15px 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  /* Animation for quote fading in and moving up */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation for continuous scroll */
+  @keyframes scrollQuotes {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  
+  /* Call to Action Box */
+  .quote-action {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .quote-action-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .action-box {
+    background-color: #4CAF50;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-box h2 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .action-box p {
+    font-size: 18px;
+  }
+  
+  .action-box:hover {
+    background-color: #45a049;
+  }
+  
